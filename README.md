@@ -17,12 +17,12 @@ https://www.hashicorp.com/blog/vault-1-18-introduces-support-for-ipv6-and-cmpv2-
 ---
 ## Steps
 
-1. **Export Vault Enterprise License**  
+**1. Export Vault Enterprise License**  
 Before starting Vault, you need to export your Vault Enterprise license as an environment variable.
 ```
 export VAULT_LICENSE="your-vault-enterprise-license-key"
 ```
-2. **Run the Vault Setup Script**  
+**2. Run the Vault Setup Script**  
 The first script `01-test-cmpv2.sh`, sets up Vault and configures the necessary PKI secrets engines and roles for CMPv2 testing.
 ```
 chmod +x 01-test-cmpv2.sh && ./01-test-cmpv2.sh
@@ -35,7 +35,7 @@ What this script does:
 - Configures CMP endpoint: Enables the CMP endpoint in Vault and configures it.
 - Sets up authentication methods and policies: Configures Vault authentication to use certificates.
 
-3. **Set Environment Variables**  
+**3. Set Environment Variables**  
 After running `01-test-cmpv2.sh` the script outputs several environment variables that need to be set for subsequent steps.  
 Example output:
 ```
@@ -63,7 +63,7 @@ export CLIENT_KEY="/tmp/cmpv2-testing/client-key.pem"
 ```
 Copy and paste these export commands into your terminal to set them for your current session.
 
-4. **Generate a New Private Key and CSR**  
+**4. Generate a New Private Key and CSR**  
 The second script `02-new-rsa-2048-key-csr.sh` generates a new RSA private key and a Certificate Signing Request (CSR). This CSR is used to request a certificate from the CMPv2 endpoint.
 Now run the script:
 ```
@@ -76,7 +76,7 @@ What this script does:
 Note:  
 When you run the script, OpenSSL will prompt you for information to include in the CSR, such as country, state, organization, common name, etc. Fill in the details as appropriate.
 
-5. **Run the Initialization Request Script**  
+**5. Run the Initialization Request Script**  
 The third script `03-initialization-request.sh` sends a CMPv2 Initialization Request (IR) to Vault using the CSR generated in the previous step.
 ```
 chmod +x 03-initialization-request.sh && ./03-initialization-request.sh
