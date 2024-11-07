@@ -2,7 +2,8 @@
 
 **Context:**
 
-A telco customer would like to see a demo of the new functionality of HashiCorp Vault for support of CMPv2.
+A telco customer would like to see a demo of the new functionality of HashiCorp Vault for support of CMPv2.  
+Reference code: https://github.com/hashicorp/vault-tools/blob/main/users/kitography/  
 
 **Prerequisites**
 - HashiCorp Vault Enterprise 1.18.1+ent: Access to Vault Enterprise binaries and a valid license.
