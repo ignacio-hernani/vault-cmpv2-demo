@@ -62,7 +62,7 @@ export INITIAL_DEVICE_KEY="/tmp/cmpv2-testing/initial-device-key.pem"
 export CLIENT_CSR="/tmp/cmpv2-testing/client-csr.pem"
 export CLIENT_KEY="/tmp/cmpv2-testing/client-key.pem"
 ```
-Copy and paste these export commands into your terminal to set them for your current session.
+Copy and paste the export commands from your output into your terminal to set them for your current session.
 
 **4. Generate a New Private Key and CSR**  
 The second script [02-new-rsa-2048-key-csr.sh](02-new-rsa-2048-key-csr.sh) generates a new RSA private key and a Certificate Signing Request (CSR). This CSR is used to request a certificate from the CMPv2 endpoint.
