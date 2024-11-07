@@ -10,9 +10,9 @@ A telco customer would like to see a demo of the new functionality of HashiCorp 
 - Bash shell: The scripts are written for Bash.
 - Utilities: Ensure curl, jq, and nc (netcat) are installed.
 
-**Additional Documentation**
-https://developer.hashicorp.com/vault/docs/secrets/pki/cmpv2
-https://www.hashicorp.com/blog/vault-1-18-introduces-support-for-ipv6-and-cmpv2-while-improving-security-team-ux
+**Additional Documentation**  
+https://developer.hashicorp.com/vault/docs/secrets/pki/cmpv2  
+https://www.hashicorp.com/blog/vault-1-18-introduces-support-for-ipv6-and-cmpv2-while-improving-security-team-ux  
 
 ---
 ## Steps
