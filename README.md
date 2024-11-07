@@ -65,8 +65,9 @@ export CLIENT_KEY="/tmp/cmpv2-testing/client-key.pem"
 Copy and paste the export commands from your output into your terminal to set them for your current session.
 
 **4. Generate a New Private Key and CSR**  
-The second script [02-new-rsa-2048-key-csr.sh](02-new-rsa-2048-key-csr.sh) generates a new RSA private key and a Certificate Signing Request (CSR). This CSR is used to request a certificate from the CMPv2 endpoint.
-Now run the script:
+The second script [02-new-rsa-2048-key-csr.sh](02-new-rsa-2048-key-csr.sh) generates a new RSA private key and a Certificate Signing Request (CSR).  
+This CSR is used to request a certificate from the CMPv2 endpoint.  
+Now run the script:  
 ```
 openssl req -nodes -newkey rsa:2048 -keyout "${CLIENT_KEY}" -out "${CLIENT_CSR}" -subj "/CN=super.example.com"
 ```
@@ -74,6 +75,7 @@ What this script does:
 - Uses OpenSSL to generate a new 2048-bit RSA private key.
 - Creates a CSR using the generated private key.
 - The private key is saved to ${CLIENT_KEY} and the CSR to ${CLIENT_CSR}.  
+
 Note:  
 When you run the script, OpenSSL will prompt you for information to include in the CSR, such as country, state, organization, common name, etc. Fill in the details as appropriate.
 
